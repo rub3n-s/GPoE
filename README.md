@@ -1,6 +1,5 @@
-# GPoE
+# Gestão de Projetos ou Estágios do DEIS - ISEC
 ## Programação Avançada 2021/2022
-Gestão de Projetos ou Estágio do DEIS - ISEC\
 IDE
   > IntelliJ IDEA
 
