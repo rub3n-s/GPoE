@@ -1,0 +1,14 @@
+unnamed package
+pt.isec.pa.apoio_poe.model
+pt.isec.pa.apoio_poe.model.command
+pt.isec.pa.apoio_poe.model.data
+pt.isec.pa.apoio_poe.model.fsm
+pt.isec.pa.apoio_poe.ui.gui
+pt.isec.pa.apoio_poe.ui.gui.candidatura
+pt.isec.pa.apoio_poe.ui.gui.configuracao
+pt.isec.pa.apoio_poe.ui.gui.consulta
+pt.isec.pa.apoio_poe.ui.gui.orientadores
+pt.isec.pa.apoio_poe.ui.gui.proposta
+pt.isec.pa.apoio_poe.ui.gui.resources
+pt.isec.pa.apoio_poe.ui.text
+pt.isec.pa.apoio_poe.ui.utils

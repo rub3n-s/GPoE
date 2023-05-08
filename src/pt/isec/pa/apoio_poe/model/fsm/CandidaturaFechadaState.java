@@ -1,0 +1,44 @@
+package pt.isec.pa.apoio_poe.model.fsm;
+
+import pt.isec.pa.apoio_poe.model.data.ManagementData;
+
+public class CandidaturaFechadaState extends ManagementStateAdapter {
+    public CandidaturaFechadaState(ManagementContext context, ManagementData data) {
+        super(context,data);
+    }
+
+    @Override
+    public ManagementState getState() {
+        return ManagementState.CANDIDATURA_FECHADA;
+    }
+
+    @Override
+    public boolean avancar() {
+        if (data.isFechada(ManagementState.PROPOSTA)) {
+            changeState(ManagementState.PROPOSTA_FECHADA.createState(context, data));
+            return true;
+        }
+        changeState(ManagementState.PROPOSTA.createState(context, data));
+        return true;
+    }
+
+    @Override
+    public boolean voltar() {
+        if (data.isFechada(ManagementState.CONFIGURACAO)) {
+            changeState(ManagementState.CONFIGURACAO_FECHADA.createState(context, data));
+            return true;
+        }
+        changeState(ManagementState.CONFIGURACAO.createState(context,data));
+        return true;
+    }
+
+    @Override
+    public boolean execute() {
+        return false;
+    }
+
+    @Override
+    public boolean undo() {
+        return false;
+    }
+}
